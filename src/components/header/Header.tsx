@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import HeaderLink from "./HeaderLink";
 import {CgClose, FiMenu} from 'react-icons/all';
 
