@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "FORTE";
+    src: url('../fonts/FORTE.TTF');
+}
+
+.font-forte{
+    font-family: "FORTE";
+}
