@@ -20,7 +20,7 @@ export default function Header() {
     );
 
     return (
-        <header className="sticky top-0 z-50 flex justify-around bg-gray-800 shadow-md">
+        <header className="sticky top-0 z-50 flex justify-around bg-gray-800 shadow-header">
             <div className="flex">
                 <h1 className="my-auto ml-2 text-4xl text-left font-forte text-gray-200">
                     Jérémy Gendre
