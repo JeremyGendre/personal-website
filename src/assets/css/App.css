@@ -3,6 +3,15 @@
     src: url('../fonts/FORTE.TTF');
 }
 
+@font-face {
+    font-family: "BRLNSB";
+    src: url('../fonts/BRLNSR.TTF');
+}
+
 .font-forte{
     font-family: "FORTE";
+}
+
+.font-brlnsb{
+    font-family: "BRLNSB";
 }

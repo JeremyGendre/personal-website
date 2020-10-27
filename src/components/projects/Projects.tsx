@@ -1,9 +1,11 @@
 import React from "react";
+import {FaSuitcase} from "react-icons/all";
+import SectionTitle from "../SectionTitle";
 
 export default function Projects() {
     return (
-        <div className="px-2 md:px-10 lg:px-20 xl:px-40">
-            <h1 className="titles"><i className="fas fa-suitcase icons-left"></i> PROJETS</h1>
+        <>
+            <SectionTitle icon={<FaSuitcase/>} text="PROJETS"/>
             <div id="project-card-container">
                 <div className="project-card">
                     <div className="project-card-img">
@@ -50,6 +52,6 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

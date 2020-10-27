@@ -1,15 +1,11 @@
 import React from "react";
 import {FaUserCircle} from "react-icons/all";
+import SectionTitle from "../SectionTitle";
 
 export default function Profile() {
     return (
-        <div className="content-articles px-2 md:px-10 lg:px-20 xl:px-40">
-            <h1 className="flex">
-                <div className="my-auto">
-                    <FaUserCircle/>
-                </div>
-                <div className="my-auto">PROFIL</div>
-            </h1>
+        <>
+            <SectionTitle icon={<FaUserCircle/>} text="PROFIL"/>
             <div className="flex">
                 <div className="col-sm-8">
                     <p>Je suis un étudiant en informatique. Je viens de terminer mes 2 ans de DUT Informatique à
@@ -27,6 +23,6 @@ export default function Profile() {
                     <img className="hover:scale-110 transform transition duration-300" src={ process.env.PUBLIC_URL + '/images/perso.jpg' }/>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

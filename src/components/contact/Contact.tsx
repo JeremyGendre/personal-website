@@ -1,9 +1,11 @@
 import React from "react";
+import {FaAddressCard} from "react-icons/all";
+import SectionTitle from "../SectionTitle";
 
 export default function Contact() {
     return (
-        <div className="px-2 md:px-10 lg:px-20 xl:px-40">
-            <h1 className="titles"><i className="far fa-address-card icons-left"></i> CONTACT</h1>
+        <>
+            <SectionTitle icon={<FaAddressCard/>} text="CONTACT"/>
             <div id="form-contact-container">
                 <form id="form-contact">
                     <div className="row">
@@ -38,6 +40,6 @@ export default function Contact() {
             <div>
                 <i className="fas fa-envelope"></i> gendrejeremy@yahoo.fr
             </div>
-        </div>
+        </>
     );
 }
