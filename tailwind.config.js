@@ -22,11 +22,12 @@ module.exports = {
             },
             borderColor: {
                 'average' : '#adadad'
-            }
+            },
         },
     },
     variants: {
         borderWidth: ['responsive', 'hover', 'focus'],
+        borderRadius: ['responsive', 'hover', 'focus'],
     },
     plugins: [],
 };
