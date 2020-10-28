@@ -1,13 +1,9 @@
 import React from "react";
+import {SkillItemType} from "../../types/SkillItem";
 
-type Props = {
-    label: string,
-    path: string
-};
-
-export default function SkillItem(props: Props) {
+export default function SkillItem(props: SkillItemType) {
     return (
-        <div className="flex w-20 h-20 relative transition overflow-hidden">
+        <div className="flex w-20 h-20 relative transition duration-200 overflow-hidden transform hover:scale-110">
             <img className="m-auto" alt={"logo-skill-" + props.label} src={props.path}/>
             <div className="hidden">
                 <div>
