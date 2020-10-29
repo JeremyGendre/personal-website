@@ -1,8 +1,9 @@
 import React from "react";
 import {FaTools} from "react-icons/all";
 import SectionTitle from "../SectionTitle";
-import SkillItem from "./SkillItem";
 import {SkillItemType} from "../../types/SkillItem";
+import {SkillCategoryType} from "../../types/SkillCategory";
+import SkillItem from "./SkillItem";
 
 const skillsListProg:Array<SkillItemType> = [
     {label : 'HTML / CSS', path : 'HTML-CSS.png'},
@@ -33,7 +34,26 @@ const skillsListSoftwares:Array<SkillItemType> = [
 const skillsListLang:Array<SkillItemType> = [
     {label : 'Français', path : 'france.webp'},
     {label : 'Anglais', path : 'UKflag.webp'},
-    {label : 'Italian', path : 'italy.svg'},
+    {label : 'Italiano', path : 'italy.svg'},
+];
+
+const content:Array<SkillCategoryType> = [
+    {
+        label : "Langages de programmation",
+        items: skillsListProg
+    },
+    {
+        label : "Frameworks & Librairies",
+        items: skillsListFrameworks
+    },
+    {
+        label : "Logiciels",
+        items: skillsListSoftwares
+    },
+    {
+        label : "Langues",
+        items: skillsListLang
+    },
 ];
 
 export default function Skills() {
@@ -41,29 +61,19 @@ export default function Skills() {
         <>
             <SectionTitle icon={<FaTools/>} text="COMPETENCES"/>
             <div className="flex flex-wrap mt-10 text-xl">
-                <div className="w-full lg:w-1/2 my-8 px-8">
-                    <div className="mb-4 text-center">Langages de programmation</div>
-                    <div className="flex justify-around">
-                        { skillsListProg.map( item => <SkillItem label={item.label} path={process.env.PUBLIC_URL + '/images/skills/' + item.path}/>) }
-                    </div>
-                </div>
-                <div className="w-full lg:w-1/2 my-8 px-8">
-                    <div className="mb-4 text-center">Frameworks & Librairies</div>
-                    <div className="flex justify-around">
-                        { skillsListFrameworks.map( item => <SkillItem label={item.label} path={process.env.PUBLIC_URL + '/images/skills/' + item.path}/>) }
-                    </div>
-                </div>
-                <div className="w-full lg:w-1/2 my-8 px-8">
-                    <div className="mb-4 text-center">Logiciels</div>
-                    <div className="flex justify-around">
-                        { skillsListSoftwares.map( item => <SkillItem label={item.label} path={process.env.PUBLIC_URL + '/images/skills/' + item.path}/>) }
-                    </div>
-                </div>
-                <div className="w-full lg:w-1/2 my-8 px-8">
-                    <div className="mb-4 text-center">Langues</div>
-                    <div className="flex justify-around">
-                        { skillsListLang.map( item => <SkillItem label={item.label} path={process.env.PUBLIC_URL + '/images/skills/' + item.path}/>) }
-                    </div>
+                {content.map(category => {
+                    return (
+                        <div className="px-8 py-4 border-2 border-white cursor-pointer">{category.label}</div>
+                    );
+                })}
+                <div className="hidden">
+                    {content.map(category => {
+                        return (
+                            <div className="flex">
+                                { category.items.map( item => <SkillItem label={item.label} path={process.env.PUBLIC_URL + '/images/skills/' + item.path}/>) }
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </>
