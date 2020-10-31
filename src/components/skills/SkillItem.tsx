@@ -7,9 +7,11 @@ interface Props extends SkillItemType{
 
 export default function SkillItem(props: Props) {
     return (
-        <div className=" flex mx-2 w-20 h-20 relative transition duration-200 overflow-hidden transform hover:scale-110">
-            <img className={"m-auto " + (props.fullsize ? "w-full h-full" : '')} alt={"logo-skill-" + props.label} src={props.path}/>
-            <div className="hidden">
+        <div className={"flex flex-col skill-item my-2 mx-4 relative cursor-pointer"}>
+            <div className={(props.rounded ? 'rounded-full ' : '') + " relative flex m-auto overflow-hidden transition duration-200 w-24 h-24 transform hover:scale-110"}>
+                <img className={"m-auto " + (props.fullsize ? "w-full h-full" : '')} alt={"logo-skill-" + props.label} src={props.path}/>
+            </div>
+            <div className="text-center text-lg font-bold mt-4">
                 <div>
                     {props.label}
                 </div>

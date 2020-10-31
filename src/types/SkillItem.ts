@@ -1,4 +1,5 @@
 export interface SkillItemType {
     label: string,
-    path: string
+    path: string,
+    rounded: boolean
 }

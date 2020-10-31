@@ -1,3 +1,7 @@
+:root{
+    --skill-arrow-transform : calc(87.5% - 1.5em);
+}
+
 @font-face {
     font-family: "FORTE";
     src: url('../fonts/FORTE.TTF');
@@ -16,11 +20,25 @@
     font-family: "BRLNSB";
 }
 
-.skill-category-active:after {
+/*.skill-category-active:after {
     content: "";
     position: absolute;
     bottom: -2.4rem;
     right: calc(50% - 1.5em);
+    border-style: solid;
+    border-width: 0 1.5rem 1.5rem;
+    border-color: #ed8936 transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+}*/
+
+.skill-categories-container:before{
+    content: "";
+    position: absolute;
+    top: -1.7em;
+    transition: all 0.3s ease-in-out;
+    left: var(--skill-arrow-transform);
     border-style: solid;
     border-width: 0 1.5rem 1.5rem;
     border-color: #ed8936 transparent;
