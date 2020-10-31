@@ -64,7 +64,6 @@ const content:Array<SkillCategoryType> = [
 export default function Skills() {
     const [currentTab, setCurrentTab] = useState(0);
 
-
     useEffect(() => {
         const floatWidth = (100 / content.length);
         const position = (floatWidth / 2) + (currentTab * floatWidth);
