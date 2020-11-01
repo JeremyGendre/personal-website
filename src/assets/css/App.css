@@ -39,7 +39,7 @@
 }
 
 .project-item:hover > .project-item-bg{
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .project-item-text-container:before{

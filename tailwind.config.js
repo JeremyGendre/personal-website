@@ -21,6 +21,11 @@ module.exports = {
                 'profile-hover' : '-0.5em 0.5em 7px lightgray',
                 'header' : '0px 0px 7px #525252'
             },
+            opacity: {
+                '40' : '0.4',
+                '80' : '0.8',
+                '90' : '0.9'
+            },
             borderColor: {
                 'average' : '#adadad'
             },

@@ -1,4 +1,4 @@
-import {SkillItemType} from "./SkillItem";
+import {SkillItemType} from "./SkillItemType";
 import {ReactNode} from "react";
 
 export interface SkillCategoryType {

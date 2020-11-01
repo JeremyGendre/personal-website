@@ -1,5 +1,5 @@
 import React from "react";
-import {SkillItemType} from "../../types/SkillItem";
+import {SkillItemType} from "../../types/SkillItemType";
 
 interface Props extends SkillItemType{
     fullsize?: boolean

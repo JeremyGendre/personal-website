@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {BsReverseLayoutTextWindowReverse, FaCode, FaTools, GiBookshelf, MdLanguage} from "react-icons/all";
 import SectionTitle from "../SectionTitle";
-import {SkillItemType} from "../../types/SkillItem";
-import {SkillCategoryType} from "../../types/SkillCategory";
+import {SkillItemType} from "../../types/SkillItemType";
+import {SkillCategoryType} from "../../types/SkillCategoryType";
 import SkillItem from "./SkillItem";
 import {setCSSVariableProperty} from "../../helpers/utils";
 
