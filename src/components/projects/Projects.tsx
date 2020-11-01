@@ -3,15 +3,14 @@ import {FaSuitcase} from "react-icons/all";
 import SectionTitle from "../SectionTitle";
 import ProjectItem from "./ProjectItem";
 import {ProjectItemType} from "../../types/ProjectItemType";
+import {BootstrapTag, JQueryTag, SymfonyTag} from "../../types/Tags";
 
 const projectList: Array<ProjectItemType> = [
     {
         path: process.env.PUBLIC_URL + '/images/media-sante.JPG',
         href: 'https://www.media-sante.com/',
         title: 'Media-sante - Appli web interne',
-        tags: [
-            {color: '', text: ''},
-        ]
+        tags: [SymfonyTag, BootstrapTag, JQueryTag]
     },
     {
         path: process.env.PUBLIC_URL + '/images/unity-game.JPG',

@@ -7,6 +7,7 @@ module.exports = {
     theme: {
         extend: {
             margin: {
+                '05' : '0.125rem',
                 'screen' : '100vh'
             },
             width: {
@@ -22,6 +23,7 @@ module.exports = {
                 'header' : '0px 0px 7px #525252'
             },
             opacity: {
+                '20' : '0.2',
                 '40' : '0.4',
                 '80' : '0.8',
                 '90' : '0.9'
