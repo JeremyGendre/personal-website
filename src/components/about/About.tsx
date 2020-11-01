@@ -1,44 +1,24 @@
 import React from "react";
 import {FaQuestionCircle} from "react-icons/all";
 import SectionTitle from "../SectionTitle";
+import AboutSchoolItem from "./AboutSchoolItem";
 
 export default function About() {
     return (
         <>
             <SectionTitle icon={<FaQuestionCircle/>} text="A PROPOS"/>
-            <div id="about-school-career">
-                <hr className="hr-about"/>
-                <div>Parcours scolaire</div>
-                <div className="timeline">
-                    <div className="timeline-text-container left">
-                        <div className="content">
-                            <h3>2019-2020</h3>
-                            <p>Licence Professionnelle Chargé de Projet Informatique à Tetras
-                                (Annecy-le-vieux)</p>
-                        </div>
-                    </div>
-                    <div className="timeline-text-container right">
-                        <div className="content">
-                            <h3>2018-2019</h3>
-                            <p>Licence Informatique à L'Université de Grenoble</p>
-                        </div>
-                    </div>
-                    <div className="timeline-text-container left">
-                        <div className="content">
-                            <h3>2016-2018</h3>
-                            <p>DUT Informatique à l'IUT d'Annecy-le-vieux.</p>
-                        </div>
-                    </div>
-                    <div className="timeline-text-container right">
-                        <div className="content">
-                            <h3>2015</h3>
-                            <p>BAC Scientifique option Informatique et Sciences du Numérique</p>
-                        </div>
+            <div className="mt-8">
+                <div className="text-2xl border-l-4 pl-2 border-white my-4">Parcours scolaire</div>
+                <div className="relative">
+                    <div className="about-school-container flex flex-col mt-8">
+                        <AboutSchoolItem title="2020 - Aujourd'hui" text="Licence Professionnelle Chargé de Projet Informatique à Tetras (Annecy-le-vieux)" right={false}/>
+                        <AboutSchoolItem title="2019 - 2020" text="Licence Professionnelle Chargé de Projet Informatique à Tetras (Annecy-le-vieux)" right={true}/>
+                        <AboutSchoolItem title="2016 - 2018" text="DUT Informatique à l'IUT d'Annecy-le-vieux." right={false}/>
+                        <AboutSchoolItem title="2015" text="BAC Scientifique option Informatique et Sciences du Numérique" right={true}/>
                     </div>
                 </div>
             </div>
             <div id="about-hobbies">
-                <hr className="hr-about"/>
                 <div>Centres d'intérêt</div>
                 <div id="hobbies-divs-container">
                     <div className="hobbies-divs">

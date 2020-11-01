@@ -14,9 +14,9 @@ export default function ProjectItem(props: ProjectItemType) {
             <div onClick={(e) => { e.preventDefault(); e.stopPropagation(); }} className="bottom-0 text-sm left-0 absolute text-white font-bold bg-gray-800 bg-opacity-80 w-full cursor-default">
                 <div className="project-item-text-container relative">
                     <div className="px-8 py-4 w-full">
-                        <div className="text-xl">{props.title}</div>
-                        <div className="flex mt-2">
-                            {props.tags.map(tag => <ProjectTag color={tag.color} text={tag.text}/>)}
+                        <div className="text-base sm:text-xl">{props.title}</div>
+                        <div className="flex flex-wrap mt-1">
+                            {props.tags.map((tag, index) => <ProjectTag key={index} color={tag.color} text={tag.text}/>)}
                         </div>
                     </div>
                 </div>

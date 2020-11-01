@@ -52,9 +52,10 @@ export default function Projects() {
         <>
             <SectionTitle icon={<FaSuitcase/>} text="PROJETS"/>
             <div className="flex flex-wrap mt-8">
-                {projectList.map(projectItem => {
+                {projectList.map((projectItem, index) => {
                     return (
                         <ProjectItem
+                            key={index}
                             path={projectItem.path}
                             href={projectItem.href}
                             title={projectItem.title}

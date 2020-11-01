@@ -20,7 +20,8 @@ module.exports = {
                 'profile' : '0px 0px 7px gray',
                 'project' : '1px 1px 7px #A4A4A4',
                 'profile-hover' : '-0.5em 0.5em 7px lightgray',
-                'header' : '0px 0px 7px #525252'
+                'header' : '0px 0px 7px #525252',
+                'about' : '1px 1px 10px #3B3B3B'
             },
             opacity: {
                 '20' : '0.2',
