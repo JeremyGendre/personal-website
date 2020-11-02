@@ -14,7 +14,7 @@ const hobbies: Array<AboutHobbiesItemType> = [
     {title: 'Escalade', src : '/images/climbing.png'},
     {title: 'Programmer', src : '/images/prog.jpg'},
     {title: 'Lire', src : '/images/reading.png'},
-    {title: 'Jeux-vidéos', src : '/images/drums.png'},
+    {title: 'Jeux-vidéos', src : '/images/playing.png'},
     {title: 'Films/séries', src : '/images/montage_video.png'},
 ];
 
