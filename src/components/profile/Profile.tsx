@@ -6,8 +6,8 @@ export default function Profile() {
     return (
         <>
             <SectionTitle icon={<FaUserCircle/>} text="PROFIL"/>
-            <div className="block md:flex mx-8 mt-12 mb-8">
-                <div className="text-2xl my-auto md:w-3/4 xl:mr-20 text-justify">
+            <div className="block md:flex mx-2 sm:mx-8 mt-12 mb-8">
+                <div className="text-lg sm:text-xl md:text-2xl my-auto md:w-3/4 xl:mr-20 text-justify">
                     <p>Je suis un étudiant en informatique. Après avoir obtenu un DUT Informatique à
                         l'IUT d'Annecy-le-vieux ainsi qu'une licence professionnelle Chargé de Projet Informatique,
                         je suis actuellement une formation en alternance afin de valider le titre d'Expert en Développement Web au sein de
