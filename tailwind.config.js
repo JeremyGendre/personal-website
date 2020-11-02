@@ -21,7 +21,8 @@ module.exports = {
                 'project' : '1px 1px 7px #A4A4A4',
                 'profile-hover' : '-0.5em 0.5em 7px lightgray',
                 'header' : '0px 0px 7px #525252',
-                'about' : '1px 1px 10px #3B3B3B'
+                'about' : '1px 1px 10px #3B3B3B',
+                'hobby' : '1px 1px 10px gray',
             },
             opacity: {
                 '20' : '0.2',

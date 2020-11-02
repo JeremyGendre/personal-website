@@ -25,10 +25,6 @@
         transform: rotate(90deg);
         transition: all 0.15s ease-in-out;
     }
-    .about-school-item-right:hover:before, .about-school-item-left:hover:after{
-        border-width: 0 1rem 1.5rem;
-        top:0.8em;
-    }
 
     .about-school-item-right-container:before, .about-school-item-left-container:after{
         content: "";
@@ -36,10 +32,10 @@
         top: 0.7em;
         right:-0.7em;
         border-style: solid;
-        border-width: 4px;
+        border-width: 5px;
         border-radius: 50%;
-        border-color: white;
-        background-color: orange;
+        border-color: orange;
+        background-color: white;
         display: block;
         width: 1.7em;
         height: 1.7em;
@@ -49,7 +45,13 @@
 
     .about-school-item-right-container:hover:before, .about-school-item-left-container:hover:after{
         transform: scale(1.2);
-        border-color: orange;
+        background-color: orange;
+    }
+    .about-school-item-left, .about-school-item-right{
+        transition: all 0.2s ease-in-out;
+    }
+    .about-school-item-right-container:hover > .about-school-item-right, .about-school-item-left-container:hover > .about-school-item-left{
+        transform: translateX(-1em);
     }
 }
 @media (min-width: 1024px) {
@@ -70,5 +72,12 @@
     }
     .about-school-item-left-container:after{
         right: -0.85em;
+    }
+
+    .about-school-item-right-container:hover > .about-school-item-right{
+         transform: translateX(1em);
+     }
+    .about-school-item-left-container:hover > .about-school-item-left{
+        transform: translateX(-1em);
     }
 }
