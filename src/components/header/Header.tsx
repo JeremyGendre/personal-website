@@ -3,7 +3,7 @@ import HeaderLink from "./HeaderLink";
 import {CgClose, FiMenu} from 'react-icons/all';
 
 export default function Header() {
-    const [headerCollapsed, setHeaderCollapsed] = useState(true);
+    const [headerCollapsed, setHeaderCollapsed] = useState(false);
 
     const toggleHeaderCollapse = () => {
         setHeaderCollapsed(prevState => !prevState);
@@ -27,9 +27,7 @@ export default function Header() {
                 </h1>
             </div>
             <div className="my-auto text-white flex md:hidden">
-                { headerCollapsed ? '' : (
-                    <FiMenu onClick={toggleHeaderCollapse} className="cursor-pointer" size={30}/>
-                ) }
+                <FiMenu onClick={toggleHeaderCollapse} className="cursor-pointer" size={30}/>
             </div>
             { headerCollapsed ? (
                 <div className="flex flex-col md:hidden fixed right-0 bg-gray-800 text-white">
