@@ -16,12 +16,12 @@ const schoolItems: Array<SchoolItemType> = [
 const hobbies: Array<HobbyType> = [
     { title: 'Musique', src : '/images/listening_music.jpg' },
     { title: 'Batterie', src : '/images/drums.png' },
-    { title: 'Basket-ball', src : '/images/basket_ball.jpg' },
-    { title: 'Hand-ball', src : '/images/handball.png' },
+    { title: 'Basket-ball', src : '/images/basket_ball.jpg', tooltipWidth: 'w-32' },
+    { title: 'Hand-ball', src : '/images/handball.png', tooltipWidth: 'w-32' },
     { title: 'Escalade', src : '/images/climbing.png' },
     { title: 'Programmer', src : '/images/prog.jpg' },
     { title: 'Lire', src : '/images/reading.png' },
-    { title: 'Jeux-vidéos', src : '/images/playing.png' },
+    { title: 'Jeux-vidéos', src : '/images/playing.png', tooltipWidth: 'w-32' },
     { title: 'Films/séries', src : '/images/montage_video.png' },
 ];
 
@@ -44,8 +44,8 @@ export default function About() {
             <div className="mt-8">
                 <div className="text-2xl border-l-4 pl-4 border-white mb-8">Centres d'intérêt</div>
                 <div>
-                    <div className="flex justify-around flex-wrap">
-                        {hobbies.map((hobby, index) => <AboutHobbiesItem key={index} title={hobby.title} src={hobby.src}/>)}
+                    <div className="flex justify-around flex-wrap break-normal">
+                        {hobbies.map((hobby, index) => <AboutHobbiesItem key={index} tooltipWidth={hobby.tooltipWidth} title={hobby.title} src={hobby.src}/>)}
                     </div>
                 </div>
             </div>

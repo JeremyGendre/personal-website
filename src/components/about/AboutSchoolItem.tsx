@@ -1,10 +1,9 @@
 import React from "react";
+import {SchoolItemType} from "../../types/About";
 
-type Props = {
-    title: string,
-    text: string,
+interface Props extends SchoolItemType{
     right: boolean
-};
+}
 
 export default function AboutSchoolItem(props: Props) {
     return (
