@@ -19,8 +19,8 @@ const hobbies: Array<HobbyType> = [
     { title: 'Basket-ball', src : '/images/basket_ball.jpg', tooltipWidth: 'w-32' },
     { title: 'Hand-ball', src : '/images/handball.png', tooltipWidth: 'w-32' },
     { title: 'Escalade', src : '/images/climbing.png' },
-    { title: 'Programmer', src : '/images/prog.jpg' },
-    { title: 'Lire', src : '/images/reading.png' },
+    { title: 'Programmation', src : '/images/prog.jpg' },
+    { title: 'Lecture', src : '/images/reading.png' },
     { title: 'Jeux-vidéos', src : '/images/playing.png', tooltipWidth: 'w-32' },
     { title: 'Films/séries', src : '/images/montage_video.png' },
 ];
