@@ -2,7 +2,7 @@ import React, {ReactNode} from "react";
 
 type Props = {
     icon: ReactNode,
-    text: string
+    text: ReactNode
 };
 
 export default function SectionTitle(props: Props) {

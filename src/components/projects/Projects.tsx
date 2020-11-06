@@ -1,5 +1,5 @@
 import React from "react";
-import {FaSuitcase} from "react-icons/all";
+import {FaGithub, FaSuitcase} from "react-icons/all";
 import SectionTitle from "../SectionTitle";
 import ProjectItem from "./ProjectItem";
 import {ProjectItemType} from "../../types/ProjectItemType";
@@ -54,9 +54,19 @@ const projectList: Array<ProjectItemType> = [
 ];
 
 export default function Projects() {
+    const titleGithubLink = (
+        <div className="flex flex-row">
+            PROJETS
+            <div className="ml-8 text-lg flex cursor-pointer text-orange-500 hover:underline hover:text-orange"
+                 onClick={() => {window.open("https://github.com/JeremyGendre")}}>
+                <div className="my-auto">Voir plus</div>
+                <div className="ml-2 my-auto"><FaGithub/></div>
+            </div>
+        </div>
+    );
     return (
         <>
-            <SectionTitle icon={<FaSuitcase/>} text="PROJETS"/>
+            <SectionTitle icon={<FaSuitcase/>} text={titleGithubLink}/>
             <div className="flex flex-wrap mt-8">
                 {projectList.map((projectItem, index) => {
                     return (
