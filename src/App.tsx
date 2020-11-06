@@ -19,7 +19,7 @@ function App() {
                 top: '-' + scrollResult.welcomeText.positionY + 'px',
                 opacity: scrollResult.welcomeText.opacity
             }}>
-                <img className="m-auto w-1/2" src={process.env.PUBLIC_URL + '/images/welcome2.png'}/>
+                <img alt="welcome-img" className="m-auto w-1/2" src={process.env.PUBLIC_URL + '/images/welcome2.png'}/>
             </div>
 
             <Content/>

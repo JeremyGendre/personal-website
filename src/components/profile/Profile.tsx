@@ -18,7 +18,7 @@ export default function Profile() {
                     réaliser, et plus encore !
                 </div>
                 <div className="border-4 mx-auto md:ml-8 mt-8 md:mt-0 lg:w-1/4 lg:h-full lg:rounded h-48 w-48 rounded-full hover:translate-x-2 hover:-translate-y-2 hover:shadow-profile-hover transform transition duration-300 shadow-profile border-white overflow-hidden">
-                    <img className="hover:scale-110 transform transition duration-300" src={ process.env.PUBLIC_URL + '/images/perso.jpg' }/>
+                    <img alt="profile-img" className="hover:scale-110 transform transition duration-300" src={ process.env.PUBLIC_URL + '/images/perso.jpg' }/>
                 </div>
             </div>
         </>
