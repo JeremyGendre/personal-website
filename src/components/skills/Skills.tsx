@@ -19,6 +19,7 @@ const skillsListProg:Array<SkillItemType> = [
 const skillsListFrameworks:Array<SkillItemType> = [
     {label : 'Symfony', path : 'symfony.png', rounded: true},
     {label : 'React', path : 'react.png', rounded: true},
+    {label : 'Vuejs', path : 'vuejs.png', rounded: false},
     {label : 'Tailwindcss', path : 'tailwindcss.svg', rounded: true},
     {label : 'Axios', path : 'axios.png', rounded: true},
     {label : 'Bootstrap', path : 'bootstrap.png', rounded: true},

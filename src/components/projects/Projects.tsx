@@ -16,31 +16,37 @@ import {
 
 const projectList: Array<ProjectItemType> = [
     {
-        path: process.env.PUBLIC_URL + '/images/media-sante.JPG',
+        path: process.env.PUBLIC_URL + '/images/projects/media-sante.JPG',
         href: 'https://www.media-sante.com/',
         title: 'Media-sante - Appli web interne',
         tags: [SymfonyTag, JQueryTag, BootstrapTag]
     },
     {
-        path: process.env.PUBLIC_URL + '/images/abs_mngt.JPG',
+        path: process.env.PUBLIC_URL + '/images/projects/abs_mngt.JPG',
         href: 'https://github.com/JeremyGendre/absence_management_v2',
         title: 'Appli de gestion de congés',
         tags: [SymfonyTag, ReactTag, TailwindTag, AxiosTag]
     },
     {
-        path: process.env.PUBLIC_URL + '/images/ropeup-api.png',
+        path: process.env.PUBLIC_URL + '/images/projects/ropeup-api.png',
         href: 'https://www.ropeup.fr/',
         title: 'Rope Up - Appli web',
         tags: [LaravelTag, VuejsTag, BootstrapTag]
     },
     {
-        path: process.env.PUBLIC_URL + '/images/loudiers-gites.PNG',
+        path: process.env.PUBLIC_URL + '/images/projects/loudiers-gites.PNG',
         href: 'https://www.gites-de-loudiers.fr/',
         title: 'Gîtes de Loudiers - Site web',
         tags: [SymfonyTag, ReactTag, TailwindTag, AxiosTag]
     },
     {
-        path: process.env.PUBLIC_URL + '/images/unity-game.JPG',
+        path: process.env.PUBLIC_URL + '/images/projects/playlistsong.JPG',
+        href: 'https://playlistsongs-41452.web.app/',
+        title: 'Ynov Lyon - Playlist de chansons',
+        tags: [VuejsTag]
+    },
+    {
+        path: process.env.PUBLIC_URL + '/images/projects/unity-game.JPG',
         href: 'https://unity.com/fr',
         title: 'IUT Annecy - Jeu avec Unity',
         tags: [UnityTag, CsharpTag]
