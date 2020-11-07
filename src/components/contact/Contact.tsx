@@ -77,7 +77,7 @@ export default function Contact() {
             <div className="block md:flex text-xl text-center md:text-left">
                 <div>Me joindre directement :</div>
                 <Tooltip title="Copier l'adresse" width="">
-                    <div onClick={handleMailClick} className="underline ml-2 cursor-pointer flex justify-center transition duration-150 hover:text-orange-600">
+                    <div onClick={handleMailClick} className=" ml-2 cursor-pointer flex justify-center transition duration-150 hover:text-orange-600">
                         <div ref={mailRef}>
                             gendrejeremy@yahoo.fr
                         </div>

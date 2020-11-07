@@ -11,11 +11,11 @@ export default function Header() {
 
     const Links = (
         <>
-            <HeaderLink text={'PROFIL'} url={'profile'}/>
-            <HeaderLink text={'COMPETENCES'} url={'skills'}/>
-            <HeaderLink text={'PROJETS'} url={'projects'}/>
-            <HeaderLink text={'A PROPOS'} url={'about'}/>
-            <HeaderLink text={'CONTACT'} url={'contact'}/>
+            <HeaderLink text={'PROFIL'} to={'profile'}/>
+            <HeaderLink text={'COMPETENCES'} to={'skills'}/>
+            <HeaderLink text={'PROJETS'} to={'projects'}/>
+            <HeaderLink text={'A PROPOS'} to={'about'}/>
+            <HeaderLink text={'CONTACT'} to={'contact'}/>
         </>
     );
 

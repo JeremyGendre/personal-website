@@ -15,6 +15,7 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "react-scroll": "^1.8.1",
     "tailwindcss": "^1.9.6",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
@@ -32,7 +33,12 @@
       "react-app/jest"
     ],
     "rules": {
-      "no-unused-vars": ["error", { "caughtErrorsIgnorePattern": "^ignore" }]
+      "no-unused-vars": [
+        "error",
+        {
+          "caughtErrorsIgnorePattern": "^ignore"
+        }
+      ]
     }
   },
   "browserslist": {
@@ -46,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.2"
   }
 }
