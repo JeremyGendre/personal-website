@@ -4,10 +4,12 @@ import SectionTitle from "../SectionTitle";
 import Tooltip from "../tooltip/Tooltip";
 import Snackbar from "../snackbar/Snackbar";
 import InputIcon from "../input/InputIcon";
+import Button from "../button/Button";
 
 export default function Contact() {
     const mailRef = useRef<HTMLInputElement | null>(null);
     const [snackbarText, setSnackbarText] = useState('');
+    const [formSubmitting, setFormSubmitting] = useState(false);
 
     useEffect(() => {
         if(snackbarText !== ''){
@@ -33,7 +35,13 @@ export default function Contact() {
 
     const handleFormSubmit = (e: FormEvent) => {
         e.preventDefault();
-        console.log('submitted');
+        setFormSubmitting(true);
+
+        //send data here (just a simulation for now)
+        setTimeout(() => {
+            console.log('submitted');
+            setFormSubmitting(false);
+        }, 1000);
     };
 
     //TODO : FORM SUBMIT
@@ -61,8 +69,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="text-center mt-4">
-                    <input className="px-4 py-1 bg-orange-500 cursor-pointer transition duration-150 hover:bg-orange-400 text-white rounded border-1 border-orange-500 hover:border-orange-400 outline-none transform focus:scale-95"
-                           type="submit" value="Envoyer"/>
+                    <Button text='Envoyer' disabled={formSubmitting} loading={formSubmitting}/>
                 </div>
             </form>
             <hr className="my-4"/>

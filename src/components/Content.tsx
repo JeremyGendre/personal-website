@@ -9,7 +9,7 @@ import ContentSection from "./ContentSection";
 
 export default function Content() {
     return (
-        <div className="relative z-10 mt-screen bg-gray-200 flex flex-col">
+        <div className="z-10 mt-screen bg-gray-200 flex flex-col">
             <ContentSection dark={false} content={<Profile/>}/>
             <ContentSection dark={true} content={<Skills/>}/>
             <ContentSection dark={false} content={<Projects/>}/>
