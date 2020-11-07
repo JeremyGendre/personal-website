@@ -5,11 +5,13 @@ import Tooltip from "../tooltip/Tooltip";
 import Snackbar from "../snackbar/Snackbar";
 import InputIcon from "../input/InputIcon";
 import Button from "../button/Button";
+import Popup from "../popup/Popup";
 
 export default function Contact() {
     const mailRef = useRef<HTMLInputElement | null>(null);
     const [snackbarText, setSnackbarText] = useState('');
     const [formSubmitting, setFormSubmitting] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
 
     useEffect(() => {
         if(snackbarText !== ''){
@@ -39,15 +41,14 @@ export default function Contact() {
 
         //send data here (just a simulation for now)
         setTimeout(() => {
-            console.log('submitted');
+            setShowPopup(true);
             setFormSubmitting(false);
         }, 1000);
     };
 
-    //TODO : FORM SUBMIT
-
     const inputIconClasses = "w-full my-2 px-2 py-1 border-1 border-gray-500 rounded focus-within:border-orange-500";
     const inputClasses = 'outline-none bg-transparent w-full';
+
     return (
         <div className='mr-2'>
             <SectionTitle icon={<FaAddressCard/>} text="CONTACT"/>
@@ -87,6 +88,9 @@ export default function Contact() {
                 </Tooltip>
             </div>
             <Snackbar text={snackbarText} icon={<FaCheck/>}/>
+            { showPopup ? (
+                <Popup title="Désolé" text="Fonctionnalité indisponible" btnText="Ok :(" onClose={() => { setShowPopup(false); }}/>
+            ) : null }
         </div>
     );
 }
