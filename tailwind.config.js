@@ -50,6 +50,7 @@ module.exports = {
     variants: {
         borderWidth: ['responsive', 'hover', 'focus'],
         borderRadius: ['responsive', 'hover', 'focus'],
+        borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
         height: ['responsive', 'hover', 'focus'],
     },
     plugins: [],
