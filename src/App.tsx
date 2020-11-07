@@ -27,12 +27,6 @@ function App() {
             <div id="div-scroll-top">
                 <i className="fas fa-arrow-up"></i>
             </div>
-            <div id='popup-container'>
-                <div id='popup'>
-                    <div>La fonctionnalité n'est pas encore opérationnelle :(</div>
-                    <div className='btn-valid-popup-container'><span className="btn-valid-popup">OK</span></div>
-                </div>
-            </div>
         </div>
     );
 }

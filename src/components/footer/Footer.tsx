@@ -1,19 +1,21 @@
 import React from "react";
+import {FaFacebook, FaGithub, FaLinkedin} from "react-icons/all";
 
 export default function Footer() {
     return (
-        <div id="footer">
-            &copy Jérémy Gendre 2020
-            <div id="sn-container">
-                <div data-href="https://www.facebook.com/jeremy.gendre.7" data-target="_blank">
-                    <i className="fab fa-facebook-square" title="facebook"/>
-                </div>
-                <div data-href="https://github.com/JeremyGendre" data-target="_blank">
-                    <i className="fab fa-github" title="GitHub"/>
-                </div>
-                <div data-href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-gendre-a06772133/" data-target="_blank">
-                    <i className="fab fa-linkedin" title="linkedin"/>
-                </div>
+        <div className="w-full justify-center flex text-lg py-1 bg-gray-700 text-white">
+            <div className="mr-6">©Jérémy Gendre 2020</div>
+            <div onClick={() => window.open('https://www.facebook.com/jeremy.gendre.7')}
+                 className="my-auto mx-2 cursor-pointer hover:text-orange-500 transition duration-150">
+                <FaFacebook/>
+            </div>
+            <div onClick={() => window.open('https://www.linkedin.com/in/j%C3%A9r%C3%A9my-gendre-a06772133/')}
+                 className="my-auto mx-2 cursor-pointer hover:text-orange-500 transition duration-150">
+                <FaLinkedin/>
+            </div>
+            <div onClick={() => window.open('https://github.com/JeremyGendre')}
+                 className="my-auto mx-2 cursor-pointer hover:text-orange-500 transition duration-150">
+                <FaGithub/>
             </div>
         </div>
     );
