@@ -1,5 +1,5 @@
-import React, {FormEvent, useRef, useState} from "react";
-import {FaAddressCard, FiCopy} from "react-icons/all";
+import React, {FormEvent, useEffect, useRef, useState} from "react";
+import {FaAddressCard, FaCheck, FiCopy} from "react-icons/all";
 import SectionTitle from "../SectionTitle";
 import Tooltip from "../tooltip/Tooltip";
 import Snackbar from "../snackbar/Snackbar";
@@ -8,6 +8,14 @@ export default function Contact() {
     const mailRef = useRef<HTMLInputElement | null>(null);
     const [snackbarText, setSnackbarText] = useState('');
     const inputClasses = "w-full my-2 px-2 py-1 border-1 outline-none border-gray-200 rounded focus:border-orange-500";
+
+    useEffect(() => {
+        if(snackbarText !== ''){
+            setTimeout(() => {
+                setSnackbarText('');
+            }, 2000);
+        }
+    }, [snackbarText]);
 
     const handleMailClick = () => {
         if(mailRef !== null){
@@ -27,6 +35,8 @@ export default function Contact() {
         e.preventDefault();
         console.log('submitted');
     };
+
+    //TODO : FORM SUBMIT | INPUT ICON
 
     return (
         <div className='mr-2'>
@@ -61,7 +71,7 @@ export default function Contact() {
                     </div>
                 </Tooltip>
             </div>
-            <Snackbar text={snackbarText}/>
+            <Snackbar text={snackbarText} icon={<FaCheck/>}/>
         </div>
     );
 }

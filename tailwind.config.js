@@ -5,6 +5,11 @@ module.exports = {
     },
     purge: [],
     theme: {
+        inset: {
+            '0': '0',
+            'auto': 'auto',
+            '1/2': '50%',
+        },
         extend: {
             margin: {
                 '05' : '0.125rem',
