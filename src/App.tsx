@@ -23,10 +23,6 @@ function App() {
             </div>
 
             <Content/>
-
-            <div id="div-scroll-top">
-                <i className="fas fa-arrow-up"></i>
-            </div>
         </div>
     );
 }
