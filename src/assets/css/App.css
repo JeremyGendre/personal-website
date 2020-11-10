@@ -2,6 +2,10 @@
     --skill-arrow-transform : calc(87.5% - 1.5em);
 }
 
+.app-background{
+    filter: blur(6px);
+}
+
 /* FONTS */
 @font-face {
     font-family: "FORTE";
@@ -19,21 +23,6 @@
 
 .font-brlnsb{
     font-family: "BRLNSB";
-}
-
-/* SKILL */
-.skill-categories-container:before{
-    content: "";
-    position: absolute;
-    top: -1.7em;
-    transition: all 0.3s ease-in-out;
-    left: var(--skill-arrow-transform);
-    border-style: solid;
-    border-width: 0 1.5rem 1.5rem;
-    border-color: #ed8936 transparent;
-    display: block;
-    width: 0;
-    z-index: 0;
 }
 
 /* PROJECT */
