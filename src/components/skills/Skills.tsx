@@ -5,6 +5,7 @@ import {SkillItemType} from "../../types/SkillItemType";
 import {SkillCategoryType} from "../../types/SkillCategoryType";
 import SkillItem from "./SkillItem";
 import {setCSSVariableProperty} from "../../helpers/utils";
+import '../../assets/css/skills.css';
 
 const skillsListProg:Array<SkillItemType> = [
     {label : 'HTML / CSS', path : 'HTML-CSS.png', rounded: false},
@@ -77,14 +78,19 @@ export default function Skills() {
             <div className="flex flex-wrap mt-16 text-xl rounded border border-orange-600">
                 {content.map((category, index) => {
                     return (
-                        <div key={index} onClick={() => setCurrentTab(index)} className={(index !== 0 ? 'border-l-1 border-r-3 border-b-3 border-t-3 ' : 'border-3 ') + (currentTab === index ? 'skill-category-active bg-orange-500 text-white ' : '') + " relative px-2 lg:px-8 py-4 text-orange-100 hover:text-white hover:bg-orange-500 transition duration-150 border-orange-500 flex cursor-pointer w-1/4 text-center"}>
-                            <div className="flex m-auto">
+                        <div key={index} onClick={() => setCurrentTab(index)}
+                             className={(index !== 0 ? 'border-l-1 border-r-3 border-b-3 border-t-3 ' : 'border-3 ') + (currentTab === index ? 'skill-category-active bg-orange-500 text-white ' : '') + " link-tab-container relative px-2 lg:px-8 py-4 text-orange-100 overflow-hidden transition duration-150 border-orange-500 flex cursor-pointer w-1/4 text-center"}>
+                            <div className="flex m-auto z-10">
                                 <div className="my-auto md:mr-4">
                                     {category.icon}
                                 </div>
                                 <div className="my-auto hidden md:flex mr-1">
                                     {category.label}
                                 </div>
+                            </div>
+                            <div className="link-tab-bg absolute z-0 top-0 left-0 w-2full-10 h-full flex transition duration-300">
+                                <div className="w-1/2 h-full"/>
+                                <div className="w-1/2 h-full bg-orange-500"/>
                             </div>
                         </div>
                     );

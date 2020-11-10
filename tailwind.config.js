@@ -20,6 +20,8 @@ module.exports = {
                 '80' : '20rem',
                 '88' : '22rem',
                 '96' : '24rem',
+                '2full' : '200%',
+                '2full-10' : '210%'
             },
             boxShadow: {
                 'profile' : '0px 0px 7px gray',
