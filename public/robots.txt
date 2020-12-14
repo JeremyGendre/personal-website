@@ -1,3 +1,3 @@
 User-agent: *
-Sitemap: http://gendrejeremy.fr/
+Sitemap: http://gendrejeremy.fr/sitemap.xml
 Disallow:
