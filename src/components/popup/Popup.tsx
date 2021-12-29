@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function Popup(props: Props) {
-    const [opened, setOpened] = useState(props.show ? props.show : true);
+    const [opened, setOpened] = useState<Boolean>(props.show ? props.show : true);
 
     const handleClose = () => {
         if(props.onClose){

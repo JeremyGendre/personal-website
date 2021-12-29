@@ -16,12 +16,12 @@ const schoolItems: Array<SchoolItemType> = [
 const hobbies: Array<HobbyType> = [
     { title: 'Musique', src : '/images/listening_music.jpg' },
     { title: 'Batterie', src : '/images/drums.png' },
-    { title: 'Basket-ball', src : '/images/basket_ball.jpg', tooltipWidth: 'w-32' },
-    { title: 'Hand-ball', src : '/images/handball.png', tooltipWidth: 'w-32' },
+    { title: 'Basket-ball', src : '/images/basket_ball.jpg' },
+    { title: 'Hand-ball', src : '/images/handball.png' },
     { title: 'Escalade', src : '/images/climbing.png' },
     { title: 'Programmation', src : '/images/prog.jpg' },
     { title: 'Lecture', src : '/images/reading.png' },
-    { title: 'Jeux-vidéos', src : '/images/playing.png', tooltipWidth: 'w-32' },
+    { title: 'Jeux-vidéos', src : '/images/playing.png' },
     { title: 'Films/séries', src : '/images/montage_video.png' },
 ];
 

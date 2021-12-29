@@ -1,13 +1,15 @@
 .tooltip-element:hover > .tooltip{
-    opacity:1;
-    visibility: visible;
+    display: flex;
 }
 .tooltip{
-    bottom:-2.5em;
     left:0;
-    visibility: hidden;
+    right:0;
+    white-space: nowrap;
 }
-.tooltip:before{
+.tooltip-subelement{
+    bottom:-2.5em;
+}
+.tooltip-subelement:before{
     content: "";
     position: absolute;
     top: -0.4em;
