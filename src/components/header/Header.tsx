@@ -30,9 +30,9 @@ export default function Header() {
                 <div className="my-auto text-white flex md:hidden">
                     <FiMenu onClick={toggleHeaderCollapse} className="cursor-pointer" size={30}/>
                 </div>
-                <div className="hidden md:flex text-white">
+                <nav className="hidden md:flex text-white">
                     { Links }
-                </div>
+                </nav>
             </header>
             { headerCollapsed ? (
                 <div onClick={() => setHeaderCollapsed(false)} className="flex flex-col md:hidden fixed top-0 right-0 z-50 w-48 right-0 bg-gray-800 text-white">

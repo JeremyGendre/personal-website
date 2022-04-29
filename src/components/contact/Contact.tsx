@@ -78,7 +78,7 @@ export default function Contact() {
                 <div>Me joindre directement :</div>
                 <Tooltip title="Copier l'adresse" width="">
                     <div onClick={handleMailClick} className=" ml-2 cursor-pointer flex justify-center transition duration-150 hover:text-orange-600">
-                        <div ref={mailRef}>
+                        <div className="italic" ref={mailRef}>
                             gendrejeremy@yahoo.fr
                         </div>
                         <div className="ml-1">
@@ -86,6 +86,9 @@ export default function Contact() {
                         </div>
                     </div>
                 </Tooltip>
+            </div>
+            <div className="block md:flex text-xl text-center md:text-left mt-2">
+                <div>Mon CV : <a className="italic cursor-pointer text-blue-500 hover:text-blue-300 hover:underline" href="/docs/CV - Jérémy Gendre 2022.pdf" download>CV - Jérémy Gendre 2022.pdf</a></div>
             </div>
             <Snackbar text={snackbarText} icon={<FaCheck/>}/>
             { showPopup ? (
