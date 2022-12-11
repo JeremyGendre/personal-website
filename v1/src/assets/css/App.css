@@ -1,0 +1,47 @@
+:root{
+    --skill-arrow-transform : calc(87.5% - 1.5em);
+}
+
+.app-background{
+    filter: blur(6px);
+}
+
+/* FONTS */
+@font-face {
+    font-family: "FORTE";
+    src: url('../fonts/FORTE.TTF');
+}
+
+@font-face {
+    font-family: "BRLNSB";
+    src: url('../fonts/BRLNSR.TTF');
+}
+
+.font-forte{
+    font-family: "FORTE";
+}
+
+.font-brlnsb{
+    font-family: "BRLNSB";
+}
+
+/* PROJECT */
+.project-item:hover > img{
+    transform: scale(1.1);
+}
+
+.project-item:hover > .project-item-bg{
+    opacity: 0.15;
+}
+
+.project-item-text-container:before{
+    content: '';
+    height:3px;
+    position: absolute;
+    background-color: orange;
+    transition:all 0.25s ease-in-out;
+    width:0;
+}
+.project-item:hover > div .project-item-text-container:before{
+    width: 100%;
+}
