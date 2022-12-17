@@ -11,7 +11,7 @@ export default function Header(){
     const [isOpened, setIsOpened] = useState(true);
 
     useEffect(() => {
-        const defaultOpened = sessionStorage.getItem('jg-header-opened');
+        const defaultOpened = window.innerWidth > 750 ? sessionStorage.getItem('jg-header-opened') : false;
         setIsOpened(defaultOpened !== null ? defaultOpened === 'true' : true)
     }, []);
 
@@ -24,9 +24,10 @@ export default function Header(){
 
     return (
         <header className={clsx(
-            "bg-slate-900 h-screen sticky top-0 w-64 p-4 shadow-xl transition-all duration-150",
+            "bg-slate-900 h-screen right-0 top-0 w-64 p-4 shadow-xl transition-all duration-150 overflow-hidden",
             {
-                'w-20': !isOpened
+                'w-20 sticky': !isOpened,
+                'fixed md:sticky': isOpened
             }
         )}>
             <div className="flex">
@@ -73,6 +74,7 @@ function HeaderLink({children, to = '/', active = null, icon, reduced = false}: 
     const router = useRouter();
     const isActive = useMemo(() => (active !== null ? active : router.pathname === to), [active, router.pathname]);
 
+    // TODO : faire le responsive
     return (
         <li>
             <Link href={to} className={clsx(

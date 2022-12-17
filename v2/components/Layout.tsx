@@ -19,7 +19,7 @@ export default function Layout({children}: PropsWithChildren){
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="flex">
+            <div className="flex relative">
                 <main className="flex-1">
                     {children}
                 </main>
